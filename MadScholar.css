@@ -544,3 +544,229 @@ a.nav-link.text-black.lembaga {
 .beasiswa-yayasan:active:focus::after {
   transform: scaleX(1);
 }
+
+/* Sort List */
+.sort-list{
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.list{
+  color: #8B8A8A;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  margin-left: 10px;
+}
+
+/* Card */
+.card-comp {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.card {
+  height: max-content;
+  margin-top: 20px;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+  border: none;
+}
+
+/* Top Section */
+.top-sec {
+  display: flex;
+  justify-content: space-between;
+}
+.pic-section img{
+  width: 65px;
+  height: 65px;
+}
+.desc {
+  margin-left: 10px;
+}
+.name-beasiswa {
+  color: #000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  margin-bottom: 8px;
+  margin-right: auto;
+}
+.comp-yayasan {
+  display: flex;
+  align-items: center;
+}
+.comp-yayasan img {
+  width: 12px;
+  height: 12px;
+}
+.yayasan p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  margin-left: 5px;
+  max-width: 100%;
+  margin-bottom: auto;
+}
+
+/* Responsive Top Section */
+@media (max-width: 992px){
+  .card-comp {
+      margin-left: 16px;
+      margin-right: 16px;
+  }
+  .pic-section img {
+      width: 55px;
+      height: 55px;
+  }
+  .desc {
+      margin-left: 7px;
+  }
+  .sort-list{
+      margin-left: 26px;
+      margin-right: 26px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .name-beasiswa {
+      font-size: 10px;
+  }
+  .yayasan p {
+      font-size: 8px;
+      margin-left: 3px;
+      line-height: 15px;
+  }
+  .comp-yayasan img {
+      width: 10px;
+      height: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .name-beasiswa {
+      font-size: 12px;
+  }
+  .yayasan p {
+      font-size: 9px;
+      margin-left: 3px;
+      line-height: 15px;
+  }
+  .comp-yayasan img {
+      width: 10px;
+      height: 10px;
+  }
+}
+.bookmark {
+  margin-left: auto;
+  cursor: pointer;
+  color: #8B8A8A
+}
+.bookmark:hover{
+  color: #6F42C1;
+}
+.bg-bookmark{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.bg-bookmark:hover{
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background: #F5F0FF;
+  display: block;
+}
+hr {
+  border-width: 2px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* Buttom Section */
+.category {
+  border-radius: 5px;
+  border: 1px solid #E7E7E7;
+  background: #E7E7E7;
+  color: #625F5F;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  width: auto;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.det-cat {
+  display: block;
+  color: var(--Primary-50-Main, #6F42C1);
+  font-size: 9px;
+  padding: 0;
+  width: fit-content;
+}
+.daftar{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-daftar{
+  float: left;
+}
+.btn-dft{
+  border-radius: 5px;
+  background: var(--Primary-50-Main, #6F42C1);
+  width: 70px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  color: #F9FBFF;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0;
+  border: none;
+}
+.btn-dft:hover{
+  background: #8a63d2;
+  color: #F9FBFF;
+}
+.btn-dft:active{
+  transform: scale(0.96);
+}
+.comp-dealine{
+  float: right;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.icon-clock{
+  display: inline-block; 
+  vertical-align: middle; 
+  width: 10px; 
+  height: 10px;
+}
+.time{
+  color: var(--Primary-60, #5A32A3);
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+/* Responsive Buttom Section */
+@media (min-width: 768px) and (max-width: 890px){
+  .category:nth-child(2){
+      display: none;
+  }
+}
