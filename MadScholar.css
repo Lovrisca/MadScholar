@@ -456,8 +456,8 @@ a.nav-link.text-black.lembaga {
   background-color: #8a63d2;
 }
 
-.button-search:focus {
-  background-color: #6f42c1;
+.button-search:active {
+  transform: scale(0.96);
 }
 
 /* Tombol */
