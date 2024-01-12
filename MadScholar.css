@@ -14,6 +14,11 @@ body {
     margin-left: 60px;
     margin-right: 60px;
   }
+
+  .footer {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -26,11 +31,16 @@ body {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+  .footer {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 /* Background Purple */
 .background-purple {
-  background-color: #e6deff;
+  /* background-color: #e6deff; */
 }
 
 /* Navbar */
@@ -546,15 +556,15 @@ a.nav-link.text-black.lembaga {
 }
 
 /* Sort List */
-.sort-list{
+.sort-list {
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 30px;
   display: flex;
   align-items: center;
 }
-.list{
-  color: #8B8A8A;
+.list {
+  color: #8b8a8a;
   font-family: Poppins;
   font-size: 10px;
   font-style: normal;
@@ -581,7 +591,7 @@ a.nav-link.text-black.lembaga {
   display: flex;
   justify-content: space-between;
 }
-.pic-section img{
+.pic-section img {
   width: 65px;
   height: 65px;
 }
@@ -620,68 +630,68 @@ a.nav-link.text-black.lembaga {
 }
 
 /* Responsive Top Section */
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .card-comp {
-      margin-left: 16px;
-      margin-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .pic-section img {
-      width: 55px;
-      height: 55px;
+    width: 55px;
+    height: 55px;
   }
   .desc {
-      margin-left: 7px;
+    margin-left: 7px;
   }
-  .sort-list{
-      margin-left: 26px;
-      margin-right: 26px;
+  .sort-list {
+    margin-left: 26px;
+    margin-right: 26px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .name-beasiswa {
-      font-size: 10px;
+    font-size: 10px;
   }
   .yayasan p {
-      font-size: 8px;
-      margin-left: 3px;
-      line-height: 15px;
+    font-size: 8px;
+    margin-left: 3px;
+    line-height: 15px;
   }
   .comp-yayasan img {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 @media (max-width: 767px) {
   .name-beasiswa {
-      font-size: 12px;
+    font-size: 12px;
   }
   .yayasan p {
-      font-size: 9px;
-      margin-left: 3px;
-      line-height: 15px;
+    font-size: 9px;
+    margin-left: 3px;
+    line-height: 15px;
   }
   .comp-yayasan img {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 .bookmark {
   margin-left: auto;
   cursor: pointer;
-  color: #8B8A8A
+  color: #8b8a8a;
 }
-.bookmark:hover{
-  color: #6F42C1;
+.bookmark:hover {
+  color: #6f42c1;
 }
-.bg-bookmark{
+.bg-bookmark {
   padding-left: 5px;
   padding-right: 5px;
 }
-.bg-bookmark:hover{
+.bg-bookmark:hover {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 5px;
-  background: #F5F0FF;
+  background: #f5f0ff;
   display: block;
 }
 hr {
@@ -693,9 +703,9 @@ hr {
 /* Buttom Section */
 .category {
   border-radius: 5px;
-  border: 1px solid #E7E7E7;
-  background: #E7E7E7;
-  color: #625F5F;
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+  color: #625f5f;
   font-family: Poppins;
   font-size: 9px;
   font-style: normal;
@@ -708,27 +718,27 @@ hr {
 }
 .det-cat {
   display: block;
-  color: var(--Primary-50-Main, #6F42C1);
+  color: var(--Primary-50-Main, #6f42c1);
   font-size: 9px;
   padding: 0;
   width: fit-content;
 }
-.daftar{
+.daftar {
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
 }
-.btn-daftar{
+.btn-daftar {
   float: left;
 }
-.btn-dft{
+.btn-dft {
   border-radius: 5px;
-  background: var(--Primary-50-Main, #6F42C1);
+  background: var(--Primary-50-Main, #6f42c1);
   width: 70px;
   height: 24px;
   justify-content: center;
   align-items: center;
-  color: #F9FBFF;
+  color: #f9fbff;
   font-family: Poppins;
   font-size: 10px;
   font-style: normal;
@@ -736,27 +746,27 @@ hr {
   padding: 0;
   border: none;
 }
-.btn-dft:hover{
+.btn-dft:hover {
   background: #8a63d2;
-  color: #F9FBFF;
+  color: #f9fbff;
 }
-.btn-dft:active{
+.btn-dft:active {
   transform: scale(0.96);
 }
-.comp-dealine{
+.comp-dealine {
   float: right;
   align-items: center;
   justify-content: center;
   display: flex;
 }
-.icon-clock{
-  display: inline-block; 
-  vertical-align: middle; 
-  width: 10px; 
+.icon-clock {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
   height: 10px;
 }
-.time{
-  color: var(--Primary-60, #5A32A3);
+.time {
+  color: var(--Primary-60, #5a32a3);
   font-family: Poppins;
   font-size: 9px;
   font-style: normal;
@@ -765,8 +775,179 @@ hr {
   letter-spacing: -0.25px;
 }
 /* Responsive Buttom Section */
-@media (min-width: 768px) and (max-width: 890px){
-  .category:nth-child(2){
-      display: none;
+@media (min-width: 768px) and (max-width: 890px) {
+  .category:nth-child(2) {
+    display: none;
+  }
+}
+
+/* footer */
+footer {
+  margin-top: 4em;
+  border-top: 2px solid #E7E7E7;
+}
+
+.pencari-lomba {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #000;
+
+  padding-left: 46px;
+}
+
+.logo-black {
+  width: 47px;
+}
+
+.pencari-lomba-alamat {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #625f5f;
+
+  padding-left: 93px;
+  margin-top: -3%;
+
+  justify-content: left;
+  text-align: left;
+}
+
+/* Kolom kedua */
+.perusahaan-judul,
+.beasiswa-judul {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #000;
+}
+
+.perusahaan-text,
+.beasiswa-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #000;
+  text-decoration: none;
+
+  line-height: 24px;
+}
+
+/* Sosial Media */
+.sosmed {
+  padding-right: 26px;
+}
+
+.image-sosmed {
+  width: 30px;
+}
+
+/* Copyright */
+.Copyright {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #8D9198;
+
+  text-align: left;
+  justify-content: left;
+}
+
+/* Space col */
+.foot {
+  padding-top: 2%;
+  /* padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-left: 0; */
+}
+
+.foot-copy {
+  padding-top: 6%;
+  /* padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-left: 0; */
+}
+
+/* Responsive footer */
+@media (min-width: 768px) and (max-width: 992px) {
+  .pencari-lomba {
+    font-size: 16px;
+    padding-left: 24px;
+  }
+
+  .logo-black {
+    width: 37px;
+  }
+
+  .pencari-lomba-alamat {
+    font-size: 10px;
+    padding-left: 61px;
+  }
+
+  .perusahaan-judul,
+  .beasiswa-judul {
+    font-size: 14px;
+  }
+
+  .perusahaan-text,
+  .beasiswa-text {
+    font-size: 12px;
+  }
+
+  .sosmed {
+    padding-right: 22px;
+  }
+
+  .image-sosmed {
+    width: 26px;
+  }
+
+  .Copyright { 
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pencari-lomba {
+    font-size: 12px;
+    padding-left: 12px;
+  }
+
+  .logo-black {
+    width: 27px;
+  }
+
+  .pencari-lomba-alamat {
+    font-size: 7px;
+    padding-left: 39px;
+  }
+
+  .perusahaan-judul,
+  .beasiswa-judul {
+    font-size: 12px;
+  }
+
+  .perusahaan-text,
+  .beasiswa-text {
+    font-size: 10px;
+  }
+
+  .sosmed {
+    padding-right: 18px;
+  }
+
+  .image-sosmed {
+    width: 22px;
+  }
+
+  .Copyright { 
+    font-size: 11px;
   }
 }
