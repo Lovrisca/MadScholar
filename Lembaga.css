@@ -510,3 +510,28 @@ a.nav-link.text-black.lembaga {
   margin-left: 35px;
   margin-right: 30px;
 }
+
+.image-ads{
+  width: 643px;
+  height: 325px;
+}
+.ads-body{
+  margin-top: 40px;
+  text-align: left;
+  font-family: Poppins;
+}
+.text-ads{
+  color: #352b53;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.25px;
+}
+.text-ads2{
+  color: #352b53;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
