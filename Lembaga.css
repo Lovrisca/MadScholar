@@ -573,3 +573,22 @@ a.nav-link.text-black.lembaga {
 .container.text-center{
   padding-top: 50px;
 }
+
+.card{
+  width: 423px;
+  height: 400px;
+}
+
+.card-img-top{
+  width: 200px;
+  height: 200px;
+}
+
+.card3{
+  margin-left: 19px;
+}
+
+.card-text{
+  text-align: left;
+  color: #352B53;
+}
