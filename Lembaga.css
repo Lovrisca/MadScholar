@@ -485,7 +485,7 @@ a.nav-link.text-black.lembaga {
   }
 }
 
-.container.text-center {
+.cont-cards {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -531,25 +531,30 @@ a.nav-link.text-black.lembaga {
   margin-right: 30px;
 }
 
+/* ADS Section */
+.cont-ads{
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  margin-bottom: 50px;
+}
 .image-ads {
-  width: 643px;
-  height: 325px;
+  width: auto;
 }
 .ads-body {
-  margin-top: 40px;
   text-align: left;
   font-family: Poppins;
 }
 .text-ads {
   color: #352b53;
-  font-size: 36px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 800;
   letter-spacing: -0.25px;
 }
 .text-ads2 {
   color: #352b53;
-  font-size: 18px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.25px;
