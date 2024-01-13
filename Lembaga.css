@@ -1,6 +1,6 @@
 /* Body color */
 body {
-  background-color: #fcfbff;
+  background-color: #fff;
 }
 
 /* Body Margin */
@@ -23,7 +23,6 @@ body {
   .faq {
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 60px;
   }
 }
 
@@ -46,13 +45,16 @@ body {
   .faq {
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
 /* Background Purple */
 .background-purple {
-  background-color: #e6deff;
+  background-color: #F4F1FF;
+
+  background-image: url("Images/lembaga-mask.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Navbar */
@@ -306,7 +308,7 @@ a.nav-link.text-black.lembaga {
 .container-typing-text {
   padding-top: 70px;
   overflow: hidden;
-  width: 578px;
+  /* width: 578px; */
 }
 
 .text-first {
@@ -316,6 +318,7 @@ a.nav-link.text-black.lembaga {
 
   text-align: left;
 }
+
 .text-second {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -378,6 +381,10 @@ a.nav-link.text-black.lembaga {
   .text-first {
     font-size: 30px;
   }
+
+  .text-second {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -387,6 +394,10 @@ a.nav-link.text-black.lembaga {
 
   .text-first {
     font-size: 20px;
+  }
+
+  .text-second {
+    font-size: 12px;
   }
 }
 
@@ -406,8 +417,8 @@ a.nav-link.text-black.lembaga {
   }
 
   .Graduation {
-    width: 304px;
-    padding-top: 140px;
+    width: 450px;
+    /* padding-top: 140px; */
   }
 }
 
@@ -418,8 +429,8 @@ a.nav-link.text-black.lembaga {
   }
 
   .Graduation {
-    width: 284px;
-    padding-top: 150px;
+    width: 250px;
+    /* padding-top: 150px; */
   }
 }
 
@@ -1001,5 +1012,43 @@ footer {
   .Copyright {
     font-size: 11px;
   }
+}
+
+
+/* Newest bg */
+.kartu-section {
+  background-image: url("Images/l-mask-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 10%;
+  /* padding-bottom: 2%; */
+}
+
+.jangkau-section {
+  background-color: #F9F7FF;
+
+  padding-bottom: 6%;
+  padding-top: 4%;
+}
+
+.proses-section {
+  background-image: url("Images/l-mask-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.join-sec-faq {
+  background-image: url("Images/l-mask-3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.faq {
+  padding-top: 14%;
+  padding-bottom: 12%;
 }
   
