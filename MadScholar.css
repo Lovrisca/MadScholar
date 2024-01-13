@@ -627,6 +627,7 @@ a {
 .card-comp {
   margin-left: 60px;
   margin-right: 60px;
+  margin-bottom: 50px;
 }
 .card {
   height: max-content;
@@ -692,7 +693,7 @@ a {
   .desc {
     margin-left: 7px;
   }
-  .sort-list{
+  .drop-down {
       margin-left: 26px;
       margin-right: 26px;
   }
