@@ -407,22 +407,26 @@ a.nav-link.text-black.lembaga {
 
   .Graduation {
     width: 304px;
+    padding-top: 140px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .container-typing-text {
     padding-top: 20px;
+    width: fit-content;
   }
 
   .Graduation {
-    width: 184px;
+    width: 284px;
+    padding-top: 150px;
   }
 }
 
 @media (max-width: 576px) {
   .container-typing-text {
     padding-top: 5px;
+    width: fit-content;
   }
 
   .col-sm-4 .graduation-center {
@@ -527,7 +531,7 @@ a.nav-link.text-black.lembaga {
   text-align: left;
   color: #352b53;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.25px;
@@ -998,3 +1002,4 @@ footer {
     font-size: 11px;
   }
 }
+  
