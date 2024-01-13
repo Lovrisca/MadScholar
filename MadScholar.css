@@ -515,6 +515,8 @@ a.nav-link.text-black.lembaga {
 
   position: relative;
   text-decoration: none;
+
+  padding-top: 4%;
 }
 
 .beasiswa-non-yayasan:hover,
