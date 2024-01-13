@@ -488,49 +488,49 @@ a.nav-link.text-black.lembaga {
 }
 
 .cont-cards {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0 50px 0;
+  
 }
 
 .card {
-  width: 423px;
-  height: 400px;
+  width: auto;
   border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  margin-bottom: 20px;
+}
+.card:hover{
+  box-shadow: 0 50px 90px rgba(0, 0, 0, 0.18);
 }
 
 .card-img-top {
   width: 200px;
-  height: 200px;
-  margin-left: 35px;
-}
-
-.card3 {
-  margin-left: 19px;
+  height: 180px;
+  margin-left: 20px;
 }
 
 .card-text {
   text-align: left;
   color: #352b53;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0px;
-  margin-top: 20px;
-  margin-left: 35px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .card-text2 {
   text-align: left;
   color: #352b53;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.25px;
-  margin-left: 35px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* ADS Section */
