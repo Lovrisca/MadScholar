@@ -1,211 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MadScholar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MadScholar</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="Lembaga.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="Lembaga.css" />
-</head>
+  <body>
+    <!-- Navbar -->
+    <header class="background-purple">
+      <div class="header-one">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="logo-container">
+                <img
+                  src="Images/Logo.svg"
+                  alt="Logo"
+                  width="37"
+                  height="34"
+                  class="d-inline-block align-text-top"
+                />
+                <span class="brand-text">MadScholar.</span>
+              </div>
+            </a>
 
-<body>
-  <!-- Navbar -->
-  <header class="background-purple">
-    <div class="header-one">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div class="logo-container">
-              <img src="Images/Logo.svg" alt="Logo" width="37" height="34" class="d-inline-block align-text-top" />
-              <span class="brand-text">MadScholar.</span>
+            <button
+              class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavAltMarkup"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Status Pendaftaran</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">Lembaga</a>
+                </li>
+              </ul>
             </div>
-          </a>
 
-          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Status Pendaftaran</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Lembaga</a>
-              </li>
-            </ul>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-black lembaga" href="#"
+                    >Untuk Lembaga</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-outline" href="#">Masuk</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </nav>
+      </div>
 
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-black lembaga" href="#">Untuk Lembaga</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-outline" href="#">Masuk</a>
-              </li>
-            </ul>
+      <!-- Banner -->
+      <!-- <div class="banner">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="container-typing-text">
+              <p class="text-first">
+                <span class="text-first">Bantu</span>
+                <span class="text-first">Cetak</span>
+                <span class="text-first">Generasi</span>
+                <span class="text-first">Cemerlang</span>
+                <span class="text-first">Bersama</span>
+                <span class="text-first content-cemerlang">MadScholar!</span>
+              </p>
+
+              <p class="text-second">
+                Bergabunglah dan Wujudkan generasi berakhlak mulia dengan
+                bantuan pendidikan
+              </p>
+              <button class="btn button-search" type="submit">Bergabung</button>
+            </div>
+          </div>
+          <div class="col-sm-6 graduation-left">
+            <img src="Images/Model.svg" alt="Graduation" class="Graduation" />
           </div>
         </div>
-      </nav>
-    </div>
+      </div> -->
+    </header>
 
-    <!-- Banner -->
-    <div class="banner">
-      <div class="row">
+    <!-- cards -->
+    <!-- <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              src="images/Gambar Card 1.svg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">Buat akun dan daftarkan perusahaan anda</p>
+              <p class="card-text2">
+                Daftarkan akun dengan alamat email lembaga. Kemudian verifikasi
+                email sebelum masuk.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              src="images/Gambar Card 2.svg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Tambahkan program beasiswa yang sedang dibuka
+              </p>
+              <p class="card-text2">
+                Baca panduan dan isi formulir pendaftaran dengan lengkap agar
+                program anda informatif
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              src="images/Gambar Card 3.svg"
+              class="card-img-top card3"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Iklankan program anda dan tunggu notifikasinya
+              </p>
+              <p class="card-text2">
+                Promosikan program beasiswa anda dengan berlangganan fitur
+                premium
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Ads Content -->
+    <!-- Section 1 -->
+    <!-- <div class="container text-center">
+      <div class="row justify-content-evenly">
+        <div class="col-6">
+          <img src="Images/Indonesia.svg" class="image-ads" alt="Indonesia" />
+        </div>
+        <div class="col-6">
+          <div class="ads-body">
+            <p class="text-ads">
+              Jangkau lebih banyak anak di seluruh Indonesia
+            </p>
+            <p class="text-ads2">
+              Bantuan yang anda berikan akan menjangkau lebih banyak anak di
+              Indonesia. Semakin banyak dan merata bantuan pendidikan yang
+              diberikan, akan berdampak besar bagi generasi cemerlang Indonesia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Section 2 -->
+    <!-- <div class="container text-center">
+      <div class="row justify-content-evenly">
+        <div class="col-6">
+          <div class="ads-body">
+            <p class="text-ads">Proses seleksi lebih mudah dan cepat</p>
+            <p class="text-ads2">
+              Tim kami akan membantu proses seleksi anda agar semakin mudah.
+              Dengan fitur kecocokan kandidat beasiswa akan mempercepat seleksi.
+              Semakin banyak siswa yang mendaftar bukan lagi halangan.
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="Images/Ads 2.svg" class="image-ads" alt="Ads 2" />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Section 3 -->
+    <!-- <div class="container text-center">
+      <div class="row justify-content-evenly">
+        <div class="col-6">
+          <img src="Images/Ads 3.svg" class="image-ads" alt="Indonesia" />
+        </div>
+        <div class="col-6">
+          <div class="ads-body">
+            <p class="text-ads">Aktifkan notifikasi dan pantau program anda</p>
+            <p class="text-ads2">
+              Anda dapat mengaktifkan notifikasi sehingga tidak perlu memantau
+              website kami untuk mendapatkan informasi terbaru terkait program
+              beasiswa anda. Kami akan mengirim email pemberitahuan kabar
+              terbaru dari program anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- FAQ -->
+
+    <div class="faq">
+      <div class="title-faq">
+        <h1 class="title-faq1">FAQ</h1>
+      </div>
+      <div class="row justify-content-evenly accordion">
         <div class="col-sm-6">
-          <div class="container-typing-text">
-            <p class="text-first">
-              <span class="text-first">Bantu</span>
-              <span class="text-first">Cetak</span>
-              <span class="text-first">Generasi</span>
-              <span class="text-first">Cemerlang</span>
-              <span class="text-first">Bersama</span>
-              <span class="text-first content-cemerlang">MadScholar!</span>
-            </p>
+          <!-- Accordion -->
 
-            <p class="text-second">Bergabunglah dan Wujudkan generasi berakhlak mulia dengan bantuan pendidikan
-            </p>
-            <button class="btn button-search" type="submit">Bergabung</button>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Bagaimana cara mengiklankan beasiswa?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6 graduation-left">
-          <img src="Images/Model.svg" alt="Graduation" class="Graduation" />
-        </div>
-      </div>
-    </div>
 
-  </header>
+        <div class="col-sm-6 acc-bottom">
+          <!-- Accordion -->
 
-  <!-- cards -->
-  <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="col-sm-4">
-        <div class="card">
-          <img src="images/Gambar Card 1.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Buat akun dan daftarkan perusahaan anda</p>
-            <p class="card-text2">Daftarkan akun dengan alamat email lembaga. Kemudian verifikasi email sebelum masuk.
-            </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Bagaimana program beasiswa bekerja?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img src="images/Gambar Card 2.svg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Tambahkan program beasiswa yang sedang dibuka</p>
-            <p class="card-text2">Baca panduan dan isi formulir pendaftaran dengan lengkap agar program anda informatif
-            </p>
+
+      <!-- Row 2 -->
+      <div class="row justify-content-evenly accordion">
+        <div class="col-sm-6">
+          <!-- Accordion -->
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Bagaimana cara mengiklankan beasiswa?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 acc-bottom">
+          <!-- Accordion -->
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Bagaimana proses seleksi dilakukan?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img src="images/Gambar Card 3.svg" class="card-img-top card3" alt="...">
-          <div class="card-body">
-            <p class="card-text">Iklankan program anda dan tunggu notifikasinya</p>
-            <p class="card-text2">Promosikan program beasiswa anda dengan berlangganan fitur premium</p>
+
+      <!-- Row 3 -->
+      <div class="row justify-content-evenly accordion">
+        <div class="col-sm-6">
+          <!-- Accordion -->
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Dapatkah skrining beasiswa pada website ini?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 acc-bottom">
+          <!-- Accordion -->
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Dapatkah program beasiswa diperpanjang?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Anda dapat mengiklankan program beasiswa dengan berlangganan.
+                  Kemudian pilih program yang anda ingin promosikan
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
-  </div>
+
+    <!-- Tertarik untuk Konsul? -->
+    <div class="tertarik">
+
+      <div class="row align-items-start text-center justify-content-center" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0">
+        <div class="col" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0">
+          <div class="tertarik-title-container">
+            <h1 class="tertarik-title" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0">
+              Tertarik untuk konsultasi dengang tim kami?
+            </h1>
+          </div>
+        </div>
+      </div>      
+
+      <div class="row align-items-start text-center justify-content-center button-ttr" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0">
+        <div class="col" style="padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0">
+          <div class="btn-tertarik">
+            <button type="button" class="btn-hubungi">Hubungi</button>
+          </div>
+        </div>
+      </div> 
+
+    </div>
 
 
-  <!-- Ads Content -->
-  <!-- Section 1 -->
-  <div class="container text-center">
-    <div class="row justify-content-evenly">
-      <div class="col-6">
-        <img src="Images/Indonesia.svg" class="image-ads" alt="Indonesia">
-      </div>
-      <div class="col-6">
-        <div class="ads-body">
-          <p class="text-ads">Jangkau lebih banyak anak di seluruh Indonesia</p>
-          <p class="text-ads2">Bantuan yang anda berikan akan menjangkau lebih banyak anak di Indonesia. Semakin banyak
-            dan merata bantuan pendidikan yang diberikan, akan berdampak besar bagi generasi cemerlang Indonesia.</p>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="row align-items-start line-top-foot">
+          <div
+            class="col-sm-5 text-left d-flex flex-column align-items-left justify-content-left foot"
+          >
+            <div class="d-flex align-items-left">
+              <img src="Images/Logo_black.svg" class="logo-black" alt="Logo" />
+              <p class="pencari-lomba">PT Pencari Lomba</p>
+            </div>
+            <div class="d-flex align-items-left">
+              <p class="pencari-lomba-alamat">
+                Jl. Kalpataru Malang No. 43, Jawa Timur
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-2 text-left d-flex flex-column align-items-left justify-content-left foot"
+          >
+            <div class="d-flex align-items-left">
+              <p class="perusahaan-judul">Perusahaan</p>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="perusahaan-text" href="#">Tentang Perusahaan</a>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="perusahaan-text" href="#">Pusat Bantuan</a>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="perusahaan-text" href="#">Hubungi Kami</a>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-2 text-left d-flex flex-column align-items-left justify-content-left foot"
+          >
+            <div class="d-flex align-items-left">
+              <p class="beasiswa-judul">Tentang Beasiswa</p>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="beasiswa-text" href="#">Profil Mitra</a>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="beasiswa-text" href="#">Layanan Mitra</a>
+            </div>
+
+            <div class="d-flex align-items-left">
+              <a class="beasiswa-text" href="#">Mitra Internasional</a>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-3 text-left d-flex flex-column align-items-left justify-content-left foot"
+          >
+            <div class="d-flex align-items-left">
+              <a class="sosmed" href="#">
+                <img
+                  src="Images/facebook.svg"
+                  class="image-sosmed"
+                  alt="facebook"
+                />
+              </a>
+              <a class="sosmed" href="#">
+                <img
+                  src="Images/twitter.svg"
+                  class="image-sosmed"
+                  alt="twitter"
+                />
+              </a>
+              <a class="sosmed" href="#">
+                <img
+                  src="Images/instagram.svg"
+                  class="image-sosmed"
+                  alt="instagram"
+                />
+              </a>
+              <a class="sosmed" href="#">
+                <img
+                  src="Images/linkedIn.svg"
+                  class="image-sosmed"
+                  alt="linkedIn"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row align-items-start">
+            <div class="col foot-copy">
+              <p class="Copyright">Copyright © 2024 MadScholar</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Section 2 -->
-  <div class="container text-center">
-    <div class="row justify-content-evenly">
-      <div class="col-6">
-        <div class="ads-body">
-          <p class="text-ads">Proses seleksi lebih mudah dan cepat</p>
-          <p class="text-ads2">Tim kami akan membantu proses seleksi anda agar semakin mudah. Dengan fitur kecocokan
-            kandidat beasiswa akan mempercepat seleksi. Semakin banyak siswa yang mendaftar bukan lagi halangan.</p>
-        </div>
+    <!-- Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
 
-      </div>
-      <div class="col-6">
-        <img src="Images/Ads 2.svg" class="image-ads" alt="Ads 2">
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 3 -->
-  <div class="container text-center">
-    <div class="row justify-content-evenly">
-      <div class="col-6">
-        <img src="Images/Ads 3.svg" class="image-ads" alt="Indonesia">
-      </div>
-      <div class="col-6">
-        <div class="ads-body">
-          <p class="text-ads">Aktifkan notifikasi dan pantau program anda</p>
-          <p class="text-ads2">Anda dapat mengaktifkan notifikasi sehingga tidak perlu memantau website kami untuk
-            mendapatkan informasi terbaru terkait program beasiswa anda. Kami akan mengirim email pemberitahuan kabar
-            terbaru dari program anda.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- FAQ -->
-
-  <div class="container text-center">
-    <div class="row justify-content-evenly">
-      <div class="col-4">
-        <!-- Accordion -->
-
-        
-      </div>
-      <div class="col-4">
-
-        <!-- Accordion -->
-
-      </div>
-    </div>
-  </div>
-  
-
-
-  <!-- Font -->
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-  </style>
-
-  <!-- JavaScript -->
-  <script src="MadScholar.js"></script>
-</body>
-
+    <!-- JavaScript -->
+    <script src="MadScholar.js"></script>
+  </body>
 </html>

@@ -14,6 +14,16 @@ body {
     margin-left: 60px;
     margin-right: 60px;
   }
+
+  .footer {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .faq {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -23,6 +33,16 @@ body {
   }
 
   .banner {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .footer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .faq {
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -511,23 +531,23 @@ a.nav-link.text-black.lembaga {
   margin-right: 30px;
 }
 
-.image-ads{
+.image-ads {
   width: 643px;
   height: 325px;
 }
-.ads-body{
+.ads-body {
   margin-top: 40px;
   text-align: left;
   font-family: Poppins;
 }
-.text-ads{
+.text-ads {
   color: #352b53;
   font-size: 36px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: -0.25px;
 }
-.text-ads2{
+.text-ads2 {
   color: #352b53;
   font-size: 18px;
   font-style: normal;
@@ -535,3 +555,437 @@ a.nav-link.text-black.lembaga {
   letter-spacing: -0.25px;
 }
 
+/* FAQ */
+.title-faq1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+
+  color: #2d1d61;
+
+  text-align: center;
+  align-items: center;
+
+  padding-bottom: 4%;
+}
+
+/* Accordion box */
+.accordion-button {
+  height: 100px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #1b1139;
+
+  border: 1px solid #f3f4fe;
+}
+
+/* Accordion button */
+.accordion-button::after {
+  background-image: url("Images/plus.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  transition: all 0.5s;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("Images/minus.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* Accordion Body */
+.accordion-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #736f80;
+  letter-spacing: 0.1px;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Padding Acc */
+.accordion {
+  padding-top: 15px;
+}
+
+/* Responsive accordion */
+@media (min-width: 768px) and (max-width: 992px) {
+  .accordion-button {
+    font-size: 16px;
+    height: 80px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  .accordion {
+    padding-top: 10px;
+  }
+
+  .title-faq1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .accordion-button {
+    font-size: 14px;
+    height: auto;
+  }
+
+  .accordion-body {
+    font-size: 12px;
+  }
+
+  .accordion {
+    padding-top: 7px;
+  }
+
+  .title-faq1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 12px;
+    height: auto;
+  }
+
+  .accordion-body {
+    font-size: 10px;
+  }
+
+  .accordion {
+    padding-top: 5px;
+  }
+
+  .acc-bottom {
+    padding-top: 5px;
+  }
+
+  .title-faq1 {
+    font-size: 32px;
+  }
+}
+
+/* Tertarik */
+.tertarik {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-color: #f4f1ff;
+  background-image: url("Images/tertarik-mask.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-ttr {
+  padding-top: 60px;
+}
+
+/* Tertarik isi */
+.tertarik-title-container {
+  max-width: 612px;
+  margin: 0 auto;
+}
+
+.tertarik-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+
+  color: #2d1d61;
+
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Button */
+.btn-hubungi {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #fff;
+
+  text-align: center;
+
+  background-color: #7951f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 70px rgba(65, 24, 161, 0.25);
+  border: none;
+
+  width: 252px;
+  height: 74px;
+}
+
+.btn-hubungi:hover {
+  background-color: #7951f9;
+  color: #f9fbff;
+}
+
+.btn-hubungi:active {
+  transform: scale(0.96);
+}
+
+/* Responsive Tertarik */
+@media (min-width: 768px) and (max-width: 992px) {
+  .tertarik-title {
+    font-size: 34px;
+  }
+
+  .btn-hubungi {
+    font-size: 16px;
+    width: 227px;
+    height: 59px;
+
+    border-radius: 8px;
+  }
+
+  .tertarik {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  .button-ttr {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .tertarik-title {
+    font-size: 30px;
+  }
+
+  .btn-hubungi {
+    font-size: 16px;
+    width: 227px;
+    height: 59px;
+
+    border-radius: 8px;
+  }
+
+  .tertarik {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .button-ttr {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tertarik-title {
+    font-size: 26px;
+  }
+
+  .btn-hubungi {
+    font-size: 14px;
+    width: auto;
+    height: 49px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    border-radius: 6px;
+  }
+
+  .tertarik {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .button-ttr {
+    padding-top: 30px;
+  }
+}
+
+/* footer */
+footer {
+  /* margin-top: 4em; */
+  border-top: 2px solid #e7e7e7;
+}
+
+.pencari-lomba {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #000;
+
+  padding-left: 46px;
+}
+
+.logo-black {
+  width: 47px;
+}
+
+.pencari-lomba-alamat {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #625f5f;
+
+  padding-left: 93px;
+  margin-top: -3%;
+
+  justify-content: left;
+  text-align: left;
+}
+
+/* Kolom kedua */
+.perusahaan-judul,
+.beasiswa-judul {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #000;
+}
+
+.perusahaan-text,
+.beasiswa-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #000;
+  text-decoration: none;
+
+  line-height: 24px;
+}
+
+/* Sosial Media */
+.sosmed {
+  padding-right: 26px;
+}
+
+.image-sosmed {
+  width: 30px;
+}
+
+/* Copyright */
+.Copyright {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #8d9198;
+
+  text-align: left;
+  justify-content: left;
+}
+
+/* Space col */
+.foot {
+  padding-top: 2%;
+  /* padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-left: 0; */
+}
+
+.foot-copy {
+  padding-top: 6%;
+  /* padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-left: 0; */
+}
+
+/* Responsive footer */
+@media (min-width: 768px) and (max-width: 992px) {
+  .pencari-lomba {
+    font-size: 16px;
+    padding-left: 24px;
+  }
+
+  .logo-black {
+    width: 37px;
+  }
+
+  .pencari-lomba-alamat {
+    font-size: 10px;
+    padding-left: 61px;
+  }
+
+  .perusahaan-judul,
+  .beasiswa-judul {
+    font-size: 14px;
+  }
+
+  .perusahaan-text,
+  .beasiswa-text {
+    font-size: 12px;
+  }
+
+  .sosmed {
+    padding-right: 22px;
+  }
+
+  .image-sosmed {
+    width: 26px;
+  }
+
+  .Copyright {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pencari-lomba {
+    font-size: 12px;
+    padding-left: 12px;
+  }
+
+  .logo-black {
+    width: 27px;
+  }
+
+  .pencari-lomba-alamat {
+    font-size: 7px;
+    padding-left: 39px;
+  }
+
+  .perusahaan-judul,
+  .beasiswa-judul {
+    font-size: 12px;
+  }
+
+  .perusahaan-text,
+  .beasiswa-text {
+    font-size: 10px;
+  }
+
+  .sosmed {
+    padding-right: 18px;
+  }
+
+  .image-sosmed {
+    width: 22px;
+  }
+
+  .Copyright {
+    font-size: 11px;
+  }
+}

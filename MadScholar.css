@@ -448,7 +448,7 @@ a.nav-link.text-black.lembaga {
   color: #9ea2b3;
 }
 
-.button-search {
+.btn-search {
   background-color: #6f42c1;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -458,15 +458,16 @@ a.nav-link.text-black.lembaga {
   border-radius: 10px;
   height: 42px;
   min-width: 80.32px;
+
+  border: none;
 }
 
-.button-search:hover {
+.btn-search:hover {
   color: #f5f0ff;
-
-  background-color: #8a63d2;
+  background-color: #6f42c1;
 }
 
-.button-search:active {
+.btn-search:active {
   transform: scale(0.96);
 }
 
