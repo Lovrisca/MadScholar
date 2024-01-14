@@ -3,6 +3,10 @@ body {
   background-color: #fcfbff;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 /* Body Margin */
 @media (min-width: 1093px) {
   .header-one {
