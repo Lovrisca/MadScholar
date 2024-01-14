@@ -506,7 +506,6 @@ a.nav-link.text-black.lembaga {
 
 .cont-cards {
   padding: 50px 0 50px 0;
-  
 }
 
 .card {
@@ -515,6 +514,17 @@ a.nav-link.text-black.lembaga {
   border: none;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1200px){
+  .card{
+    height: 412px;
+  }
+}
+@media (max-width: 576px){
+  .card{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 .card:hover{
   box-shadow: 0 50px 90px rgba(0, 0, 0, 0.18);
@@ -563,20 +573,37 @@ a.nav-link.text-black.lembaga {
 .ads-body {
   text-align: left;
   font-family: Poppins;
+  margin-top: 20px;
 }
 .text-ads {
   color: #352b53;
-  font-size: 2.5vw;
+  font-size: 32px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: -0.25px;
 }
 .text-ads2 {
   color: #352b53;
-  font-size: 1.5vw;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.25px;
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .text-ads{
+    font-size: 26px;
+  }
+  .text-ads2{
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  .text-ads{
+    font-size: 22px;
+  }
+  .text-ads2{
+    font-size: 14px;
+  }
 }
 
 /* FAQ */
